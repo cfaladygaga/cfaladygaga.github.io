@@ -1,0 +1,111 @@
+#whiteboard {
+	border: 2px solid #212121;
+	background-image: url('Resources/bw.jpg');
+	background-size: cover;
+	background-position: center;
+  }
+  
+  
+  #controls input[type="color"],
+  #controls label {
+    margin-right: 10px;
+  }
+  
+  .controlButton {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212121; 
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .controlButton:hover {
+    background-color: #808080; 
+  }
+
+  .rainbow-button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #212121;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .rainbow-button:hover {
+    background-color: #555;
+  }
+
+  .rainbow-button.active {
+    background-color: #4CAF50;
+  }
+  
+  .progress-bar {
+    width: 100%;
+    height: 20px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .progress {
+    height: 100%;
+    width: 0;
+    background-color: #4CAF50;
+    border-radius: 5px;
+    transition: width 0.3s ease;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .buttons button {
+	width: 200px;
+	height: 50px;
+    margin: 0 10px;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.4s;
+  }
+  
+  .buttons button:hover {
+    background-color: #45a049;
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Merriweather&display=swap');
+  #timelineDescription {
+	font-weight: 100;
+	font-size: 1.9em;
+	font-family: 'Merriweather', serif; /* Change the font family to Merriweather */
+	/* Add the following properties to center the div */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10vh; /* Adjust the height as needed */
+  }
+
+  #fullpage2{
+	background: url(Resources/bio-01.png);
+	background-size:cover;
+	background-position:center;
+	position: sticky;
+	color: white;
+
+}

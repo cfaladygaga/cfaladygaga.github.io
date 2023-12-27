@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Lady Gaga</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css'>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="piano.css">
+  <link rel="stylesheet" href="telmo.css">
+  <link rel="icon" type="image/x-icon" href="/Resources/logo.png">
+</head>
+
+<body>
+
+  <header>
+    <div class="header-top clearfix">
+      <h1 class="l-left"><a href="#firstSection"><img src="Resources/logo.png" alt="logo" width="200" height="70"></a></h1>
+      <a class="l-right toggle-menu" href="#">
+        <i></i>
+        <i></i>
+        <i></i>
+      </a>
+    </div>
+
+    <nav class="hide">
+      <ul id="menu">
+        <li data-menuanchor="firstSection">
+          <a href="#firstSection" title="First Section">First Section</a>
+        </li>
+        <li data-menuanchor="secondSection">
+          <a href="#secondSection" title="Second Section">Second Section</a>
+        </li>
+        <li data-menuanchor="thirdSection">
+          <a href="#thirdSection" title="Second Section">Third Section</a>
+        </li>
+        <li data-menuanchor="fourthSection">
+          <a href="#fourthSection" title="Fourth Section">Fourth Section</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="fullpage">
+    <section id = "fullpage1" class="vertical-scrolling"> 
+    <iframe id = "giphy" src="" width="480" height="400" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p></p></p>
+      <img id = "img" src="Resources/ladygaga.png" alt=""></img>
+    </section>
+
+    <section id = "fullpage2" class="vertical-scrolling">
+      <h3>Biography</h3>
+
+      <div class="progress-bar">
+        <div class="progress" id="progress"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="birthYearBtn">2006</button>
+        <button id="activityBtn">2008</button>
+        <button id="firstHitYearBtn">2009</button>
+        <button id="superBowlYearBtn">2017</button>
+      </div>
+
+      <div id="timelineDescription">Click to discover more about Lady Gaga</div>
+
+      <script src="bar.js"></script>
+    </section>
+    <section class="vertical-scrolling">
+      <h2>MAKEUP LADYGAGA AS YOU WANT!!!</h2>
+      <h3>$$$SHARE THIS FOR A CHANCE TO WIN A TICKET$$$</h3>
+    
+      <div id="controls">
+        <input type="color" id="colorPicker" value="#000000">
+        <!-- Adding the alpha slider -->
+        <label for="alphaSlider">Alpha:</label>
+        <input type="range" id="alphaSlider" min="0" max="100" value="100">
+        <!-- End of alpha slider -->
+    
+        <button id="rainbowModeBtn" class="rainbow-button">Rainbow Mode</button>
+    
+        <button id="clearCanvas" class="controlButton">Clear All</button>
+        <button id="saveImage" class="controlButton">Save as Image</button>
+      </div>
+    
+
+      <canvas id="whiteboard" width="1200" height="600"></canvas>
+
+
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+      <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+      <script src="app.js"></script>
+
+    </section>
+
+    <section id = "fullpage5" class="vertical-scrolling">
+      
+      
+      <div class="piano">
+        
+        
+        <div class="start">
+          <h3 style="color: aliceblue">PIANO TITLE</h3><p></p><p></p>
+          <button>Play</button>
+        </div>
+        <h3 id = "unic" style="color: aliceblue">Play keys (A,S,K,L) and (SPACE) to start</h3>
+        <div id="game" style="display: none;">
+          <div id="game-container">
+            <img src="Resources/beefDress.webp" class="pianoBackground">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <div class="line" id="line4"></div>
+          </div>
+          <div class="tiles" id="tiles">
+  
+          </div>
+          <div class="score">
+            <p id="score">0</p>
+          </div>
+        </div>
+  
+        <div class="result_box">
+          <div class="icon">
+            <i class="fas fa-crown"></i>
+          </div>
+          <div class="complete_text">You've completed The Game!</div>
+          <div class="score_text">You've scored 0 points</div>
+          <div class="buttons">
+            <button class="restart">Replay</button>
+          </div>
+        </div>
+  
+      </div>
+      <audio id="music" src="https://drive.google.com/uc?id=1vCDIoUu4NIjBlMOee-wTDsHBMc1bxzES" hidden>
+        <audio id="play" src="https://drive.google.com/uc?id=16ZqyQo4C59nUeXcP7H7L7XzUwrI7f3bW" hidden>
+          <audio id="out" src="https://drive.google.com/uc?id=1OtAEm0PY38LdtKPBRe_ucoysYkAY7cG2" hidden>
+            <audio id="result" src="https://drive.google.com/uc?id=1GvdIT1VsX48R9emQHCWxs4KP-hEQxeal" hidden>
+              <audio id="pokerFace" src="Resources/pokerFace.mp3" hidden>
+  
+  
+    </section>
+
+  </div>
+  <script>
+    function toggleImage(imageId) {
+      var image = document.getElementById(imageId);
+      // Toggle the visibility of the image
+      image.style.display = (image.style.display === 'none' || image.style.display === '') ? 'block' : 'none';
+    }
+  </script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js'></script>
+  <script src="function.js"></script>
+  <script src="pianoTiles.js"></script>
+
+</body>
+
+</html>
